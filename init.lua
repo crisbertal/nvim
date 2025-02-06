@@ -30,8 +30,9 @@ require 'keymaps'
 require("lazy").setup({
   spec = {
     "tpope/vim-commentary",
-    "tpope/vim-fugitive",
     "tpope/vim-sleuth",
+    "tpope/vim-surround",
+    "junegunn/vim-easy-align",
     {
       'folke/todo-comments.nvim',
       event = 'VimEnter',
