@@ -39,7 +39,18 @@ require("lazy").setup({
       dependencies = { 'nvim-lua/plenary.nvim' },
       opts = { signs = false },
     },
-
+    {
+      'echasnovski/mini.splitjoin',
+      version = '*',
+      config = function ()
+        require('mini.splitjoin').setup({
+          mappings = {
+            split = 'gj',
+            join = 'g,',
+          },
+        })
+      end
+    },
     -- import your plugins config
     { import = "plugins" },
   },
